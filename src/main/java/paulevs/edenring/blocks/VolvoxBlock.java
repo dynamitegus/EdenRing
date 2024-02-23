@@ -31,7 +31,7 @@ import java.util.Optional;
 public class VolvoxBlock extends SlimeBlock implements RenderLayerProvider, BlockModelProvider, CustomColorProvider {
 	private static final OpenSimplexNoise NOISE = new OpenSimplexNoise("volvox".hashCode());
 	
-	@Environment(EnvType.CLIENT)
+	//@Environment(EnvType.CLIENT) this line seems to break everything
 	private static final int[] COLORS;
 	
 	public VolvoxBlock() {
